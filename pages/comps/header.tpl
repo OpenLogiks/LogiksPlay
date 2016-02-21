@@ -31,11 +31,11 @@
         </li> -->
     </ul>
     <ul class="nav navbar-top-links navbar-right actionbar">
-        <li>
+        <!-- <li>
             <a href="{_link('signin')}" >
                 <i class="fa fa-power-off fa-fw"></i>
             </a>
-        </li>
+        </li> -->
         <!-- <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
