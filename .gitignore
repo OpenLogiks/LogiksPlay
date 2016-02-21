@@ -1,0 +1,9 @@
+/apps/
+/tmp/
+/tests/tmp/
+/pluginsDev/
+/todo.txt
+/data/sqlite/testdata.db
+/config/jsonConfig/
+/ZOLD/
+.project

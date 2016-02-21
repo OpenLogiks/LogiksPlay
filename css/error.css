@@ -1,0 +1,260 @@
+/*
+ * Error page
+ */
+body.error {
+  font-family: monospace;
+  background: #FFF;
+  color: #405261;
+}
+.container.error {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container.error h1,
+.container.error h2,
+.container.error h3,
+.container.error h4,
+.container.error h5 {
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.container.error h1 {
+  font-weight: normal;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.container.error h3 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.container.error h1 i[class^="icon-"]:before {
+  font-size: 46px;
+}
+
+.container.error .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.container.error p {
+	margin: 0 0 10px;
+}
+.container.error p.logiksMsg {
+	font-size: 16px;
+  font-weight: normal;
+}
+
+.exception-name-block {
+  margin-bottom: 15px;
+}
+.exception-name-block div,
+.exception-name-block p {
+  padding: 10px 15px;
+}
+.exception-name-block div {
+	/*background-color: #4288CE;
+  color: #F3F3F3;
+  box-shadow: inset -2px 0 0 rgba(255, 255, 255, .1);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .2);*/
+
+
+  background: #4288CE;
+  color: #F3F3F3;
+  position: relative;
+}
+.exception-name-block div:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  bottom: -6px;
+  left: 20px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #4288CE transparent transparent transparent;
+}
+.exception-name-block p {
+  background: #ebebeb;
+  margin-bottom: 0;
+}
+.exception-name-block p span {
+  color: #899fb1;
+}
+
+/*
+ * Icons
+ */
+
+.icon-Error {
+	background: transparent url(images/errors/prime.png) no-repeat center center;
+	padding: 25px;
+	margin-right: 10px;
+}
+.icon-Code {
+	background: transparent url(images/errors/stackTrace.png) no-repeat center center;
+	padding: 25px;
+	margin-right: 10px;
+}
+
+/*
+ * Tables
+ */
+.container.error table.data-table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.container.error table.data-table tr:first-child th {
+  border-top: 0;
+}
+.container.error table.data-table tr:last-child td {
+  border-bottom: 0;
+}
+.container.error table.data-table tr td:first-child,
+.container.error table.data-table tr th:first-child {
+  border-left: 0;
+}
+.container.error table.data-table tr td:last-child,
+.container.error table.data-table tr th:last-child {
+  border-right: 0;
+}
+.container.error table.data-table td,
+.container.error table.data-table th {
+  vertical-align: top;
+  text-align: left;
+  font-weight: normal;
+  border: 1px solid #fff;
+  padding: 6px 8px;
+}
+.container.error table.data-table td.right,
+.container.error table.data-table th.right {
+  text-align: right;
+}
+.container.error table.data-table thead th,
+.container.error table.data-table thead th {
+  text-transform: uppercase;
+  background: #0f0f0f;
+  color: white;
+}
+.container.error table.data-table tbody td,
+.container.error table.data-table tbody th {
+  background-color: white;
+}
+.container.error table.data-table tbody tr:nth-child(2n) td,
+.container.error table.data-table tbody tr:nth-child(2n) th {
+  background-color: #d8d9db;
+}
+.container.error table.data-table tr:hover td {
+
+}
+
+/*Syntax Highlighter Tweaks*/
+.dp-highlighter li {
+	padding: 3px 3px 0 10px !important;
+	line-height: 17px !important;
+}
+.dp-highlighter li.active.current {
+	background-color: #F4F380 !important;
+}
+
+/* Doxy pretty-printing styles. Used with prettify.js.  */
+pre .str, code .str { color: #fec243; } /* string  - eggyolk gold */
+pre .kwd, code .kwd { color: #8470FF; } /* keyword - light slate blue */
+pre .com, code .com { color: #32cd32; font-style: italic; } /* comment - green */
+pre .typ, code .typ { color: #6ecbcc; } /* type - turq green */
+pre .lit, code .lit { color: #d06; } /* literal - cherry red */
+pre .pun, code .pun { color: #8B8970;  } /* punctuation - lemon chiffon4  */
+pre .pln, code .pln { color: #f0f0f0; } /* plaintext - white */
+pre .tag, code .tag { color: #9c9cff; } /* html/xml tag  (bluey)  */
+pre .htm, code .htm { color: #dda0dd; } /* html tag  light purply*/
+pre .xsl, code .xsl { color: #d0a0d0; } /* xslt tag  light purply*/
+pre .atn, code .atn { color: #46eeee; font-weight: normal;} /* html/xml attribute name  - lt turquoise */
+pre .atv, code .atv { color: #EEB4B4; } /* html/xml attribute value - rosy brown2 */
+pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
+
+a {
+  text-decoration: none;
+}
+pre.prettyprint, code.prettyprint {
+  font-family:monospace;
+  font-weight: bold;
+  font-size: 9pt;
+  background-color: #0f0f0f;
+}
+
+pre.prettyprint {
+  margin: 1em auto;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+pre.prettyprint a, code.prettyprint a {
+   text-decoration:none;
+}
+/* Specify class=linenums on a pre to get line numbering; line numbers themselves are the same color as punctuation */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #8B8970; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: decimal }
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 { }
+
+/* print is mostly unchanged from default at present  */
+@media print {
+  pre.prettyprint, code.prettyprint { background-color: #fff;  }
+  pre .str, code .str { color: #088; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #oc3; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #b66ff7; font-weight: bold; }
+  pre .htm, code .htm { color: #606; font-weight: bold; }
+  pre .xsl, code .xsl { color: #606; font-weight: bold; }
+  pre .atn, code .atn { color: #c71585;  font-weight: normal; }
+  pre .atv, code .atv { color: #088;  font-weight: normal; }
+}
+
+pre.prettyprint {
+	white-space: pre-wrap;
+}
+
+pre.prettyprint a, code.prettyprint a {
+	text-decoration:none;
+}
+.container.error .linenums li {
+  padding-top: 4px;padding-bottom: 3px;
+	padding-left: 1px;
+}
+.container.error .linenums li.current{
+	background: rgba(255, 120, 120, .07);
+}
+.container.error .linenums li.current.active {
+	background: rgba(255, 120, 120, .17);
+}
+
+/*
+ * All Media Queries
+ */
+
+@media (min-width: 768px) {
+	.container.error {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+	.container.error {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+	.container.error {
+    width: 1170px;
+  }
+}
