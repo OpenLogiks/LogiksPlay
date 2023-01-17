@@ -1,0 +1,11 @@
+{
+    "title": "Output",
+    "description": "Logiks Play Output",
+    "keywords": "",
+    "robot": "",
+    "slug": "sid",
+    "template": "blank",
+    "enabled": "true",
+    "access": "public",
+    "meta": []
+}

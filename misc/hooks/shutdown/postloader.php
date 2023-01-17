@@ -1,14 +1,13 @@
 <?php
-$page=explode("/", PAGE);
+if(!defined('ROOT')) exit('No direct script access allowed');
 
-$fs=scandir(APPROOT.APPS_PLUGINS_FOLDER."modules/");
-$fss=[];
-foreach ($fs as $fname) {
-	if(strpos($fname, "postload_{$page[0]}")===0) {
-		$fss[]=$fname;
-	}
-}
-foreach ($fss as $fname) {
-	loadModule($fname);
+$page=current(explode("/", PAGE));
+
+if($page=="codespace") {
+    if(isset($_SESSION['PLAYHOOKS']['postload'])) {
+        foreach($_SESSION['PLAYHOOKS']['postload'] as $mod) {
+            if(strlen($mod)>0) loadModule($mod);
+        }
+    }
 }
 ?>

@@ -24,7 +24,7 @@
   <body {$PAGE.BODY_CLASS} {$PAGE.BODY_ATTRIBUTES} >
   	<div id="wrapper" class='wrapper noselect'>
   		<div id='header'>
-		      {component src='header_home'}
+		      {component src='header'}
 		  </div>
 		  <div id="page-wrapper">
 	        {viewpage}

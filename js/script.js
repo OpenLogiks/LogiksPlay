@@ -12,8 +12,6 @@ $(function() {
 			cmd=$(this).attr('cmd');
 			takeAction(cmd,this);
 		});
-
-	tryLoadSession();
 });
 
 function takeAction(cmd,src) {
@@ -51,7 +49,7 @@ function takeAction(cmd,src) {
 }
 function executeCode() {
 	//console.log("Executing Workspace Code");
-
+    waitingDialog.show("Running ...");
 	arr=getCodeData();
 	if($("#codespace .optsTable").length>0) {
 		$("select,input","#codespace .optsTable").each(function() {

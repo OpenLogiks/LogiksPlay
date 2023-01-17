@@ -14,9 +14,12 @@ if(isset($_REQUEST['lpgsid'])) {
 
 	$f="{$codes_dir}source.cmd";
 	if(file_exists($f)) {
-		include $f;
+	    include $f;
+	    handleActionMethodCalls();
+	} else {
+	    printErr("WrongFormat","Service Not Found");
 	}
 } else {
-	printErr("WrongFormat","Requested Format Ommits Required Fields.");
+	printErr("WrongFormat","Requested Format Ommits Required Fields");
 }
 ?>

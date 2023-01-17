@@ -18,7 +18,7 @@ if(isset($_REQUEST["sid"])) {
 
 
 $codes_dir=getCodeDir($sid);
-	
+
 if(!is_dir($codes_dir)) {
 	printServiceErrorMsg("Sorry, Permission Denied to Create Session Folder");
 	exit();

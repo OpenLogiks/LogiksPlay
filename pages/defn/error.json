@@ -1,10 +1,14 @@
 {
-    "title": "ERROR PAGE",
+    "title": "Error Page",
     "description": "Logiks Error Page",
     "template": "error",
     "viewpage": "error",
     "css": "bootstrap.min,font-awesome.min,style,error,errorPrint",
     "js_preload": "jquery",
     "js_postload": "jquery.ui,bootstrap.min,bootstrap.bootbox.min,dialogs_common,dialogs_bootstrap,ajax",
-    "enabled": true
+    "enabled": "true",
+    "slug": "",
+    "keywords": "",
+    "robot": "",
+    "access": "public"
 }

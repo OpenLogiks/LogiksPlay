@@ -1,0 +1,15 @@
+{
+    "title": "Code Space",
+    "description": "",
+    "keywords": "",
+    "robot": "",
+    "slug": "",
+    "template": "codespace",
+    "css": "bootstrap.min,font-awesome.min,playIcons,style,theme",
+    "js_preload": "jquery",
+    "js_postload": "jquery.ui,bootstrap.min,bootstrap.bootbox.min,dialogs_common,dialogs_bootstrap,ajax,script",
+    "modules_preload": "",
+    "modules_postload": "",
+    "enabled": "true",
+    "access": "public"
+}

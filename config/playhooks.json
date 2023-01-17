@@ -1,0 +1,8 @@
+{
+    "preload": [
+        "preload_output_test"
+    ],
+    "postload": [
+        "postload_home_historyList"
+    ]
+}

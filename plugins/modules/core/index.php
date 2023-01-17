@@ -10,12 +10,12 @@ if(!function_exists("__resetEnviroment")) {
 	}
 
 	function getCodeDir($sid) {
-		//{$_SESSION['SESS_USER_ID']}/{$sid}/
-		if(isset($_SESSION['SESS_USER_ID']) && strlen($_SESSION['SESS_USER_ID'])>0 && $_SESSION['SESS_USER_ID']!="guest") {
-			$dir=getStorageDir("codes/{$_SESSION['SESS_USER_ID']}/{$sid}");
-		} else {
-			$dir=getStorageDir("codes/{$sid}");
-		}
+// 		if(isset($_SESSION['SESS_USER_ID']) && strlen($_SESSION['SESS_USER_ID'])>0 && $_SESSION['SESS_USER_ID']!="guest") {
+// 			$dir=getStorageDir("codes/{$_SESSION['SESS_USER_ID']}/{$sid}");
+// 		} else {
+// 			$dir=getStorageDir("codes/{$sid}");
+// 		}
+        $dir=getStorageDir("codes/{$sid}");
 		if(!is_dir($dir)) {
 			mkdir($dir,0777,true);
 		}
@@ -54,11 +54,12 @@ if(!function_exists("__resetEnviroment")) {
 	    if( !preg_match('/./', $filename) ) return '';
 	    return preg_replace('/^.*./', '', $filename);
 	}
+	
 	// Returns the file name, less the extension.
 	function file_ext_strip($filename){
 	    return preg_replace('/.[^.]*$/', '', $filename);
 	}
-
+	
 	register_shutdown_function("__resetEnviroment");
 
 	getStorageDir("code");

@@ -21,7 +21,7 @@ CurrentUser="<?=(isset($_SESSION['SESS_USER_ID']))?$_SESSION['SESS_USER_ID']:"" 
 CurrentRole="<?=(isset($_SESSION['SESS_PRIVILEGE_NAME']))?$_SESSION['SESS_PRIVILEGE_NAME']:"" ?>";
 LingData={};
 <?php
-	$ling=Lingulizer::getInstance();
+	$ling=Lingualizer::getInstance();
 	$json=json_encode($ling->lang);
 	if(strlen($json)>2) echo 'LingData='.$json.';';
 ?>

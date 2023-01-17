@@ -18,7 +18,7 @@ function tryLoadHistory() {
 
 		// $("#header .actionbar").prepend("<li class='dropdown workspacelist'><a class='dropdown-toggle' data-toggle='dropdown' href='#'><i class='fa fa-tasks fa-fw'></i>  <i class='fa fa-caret-down'></i></a><ul class='dropdown-menu'></ul></li>");// dropdown-messages
 
-		// defLink=_link("home/xxxx");
+		// defLink=_link("codespace/xxxx");
 		// $.each(workspaceList,function(key,title) {
 		// 	lx=defLink.replace('xxxx',key);
 		// 	$("#header .actionbar .workspacelist ul.dropdown-menu").append("<li><a href='"+lx+"'>"+title+"</a></li>");

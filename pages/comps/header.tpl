@@ -10,20 +10,16 @@
     </div>
     <ul class="nav navbar-top-links navbar-left toolbar">
         <li>
-            <a href="#" class='actioncmd' cmd='runCode'>
+            <a href="#" class='actioncmd' cmd='runCode' title='Run Code'>
                 <i class="fa fa-play fa-fw"></i>
             </a>
         </li>
         <li>
-            <a href="#" class='actioncmd' cmd='resetWorkspace'>
+            <a href="#" class='actioncmd' cmd='resetWorkspace' title='Reset Workspace'>
                 <i class="fa fa-refresh fa-fw"></i>
             </a>
         </li>
-        <li>
-            <a href="#" class='actioncmd' cmd='clearWorkspace'>
-                <i class="fa fa-recycle fa-fw"></i>
-            </a>
-        </li>
+        
         <!-- <li>
             <a href="#" class='actioncmd' cmd='saveWorkspace'>
                 <i class="fa fa-save fa-fw"></i>

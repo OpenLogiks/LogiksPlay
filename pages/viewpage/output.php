@@ -12,6 +12,8 @@ $sid=$arrOut['sid'];
 
 error_reporting(1);
 setConfig("ALLOW_ROOTDB_ACCESS","false");
+define("ALLOW_ROOTDB_ACCESS",false);
+define("DEBUG_LOG", false);
 
 $codes_dir=getCodeDir($sid);
 $code_cache_dir=getCodeCacheFile($sid);
@@ -28,7 +30,7 @@ foreach($arrData as $a=>$b) {
 		$arrData[$a]=file_get_contents($f);
 	}
 }
-
+// printArray($arrData);exit();
 
 $jsonConfig="{$codes_dir}config.json";
 $jsonData=array();
