@@ -27,7 +27,8 @@ if(!function_exists("__resetEnviroment")) {
 		if(!is_dir($dir)) {
 			mkdir($dir,0777,true);
 		}
-		return "{$dir}/{$_SESSION['SESS_USER_ID']}-{$sid}";
+		//return "{$dir}/{$_SESSION['SESS_USER_ID']}-{$sid}";
+		return "{$dir}{$sid}";
 	}
 
 	function getStorageDir($dir) {

@@ -23,7 +23,7 @@
 			    	<div class="editor" name='js' type='javascript' id='editor_js'></div>
 			    </div>
 			    <div role="tabpanel" class="tab-pane" id="tab_tmpl">
-			    	<div class="editor" name='tmpl' type='php' id='editor_tmpl'></div>
+			    	<div class="editor" name='tpl' type='php' id='editor_tmpl'></div>
 			    </div>
 			    <div role="tabpanel" class="tab-pane" id="tab_scmd">
 			    	<div class="editor" name='cmd' type='php' id='editor_cmd'></div>

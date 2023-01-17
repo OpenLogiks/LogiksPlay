@@ -35,6 +35,7 @@ switch (strtoupper($_REQUEST['action'])) {
 	case 'JS':
 	case 'CSS':
 	case 'TMPL':
+    case 'TPL':
 	case 'CMD':
 		$f="{$codes_dir}source.{$a}";
 		if(file_exists($f)) {

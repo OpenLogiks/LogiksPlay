@@ -109,7 +109,8 @@ function tryLoadSession() {
 	loadEditorRemote('css');
 	loadEditorRemote('js');
 	loadEditorRemote('cmd');
-	loadEditorRemote('tmpl');
+// 	loadEditorRemote('tmpl');
+	loadEditorRemote('tpl');
 
 	// $.get(_service('workspace',"opts")+"&sid="+logiksPlaySID,function(txt) {
 	// 	try {

@@ -19,7 +19,7 @@ if(!is_dir($codes_dir)) {
 }
 
 if(isset($_POST)) {
-	$arrData=array("css"=>"","js"=>"","php"=>"","cmd"=>"","tmpl"=>"");
+	$arrData=array("css"=>"","js"=>"","php"=>"","cmd"=>"","tpl"=>"");
 	foreach($arrData as $a=>$b) {
 		$f="{$codes_dir}source.{$a}";
 		if(isset($_POST[$a])) {

@@ -3,7 +3,7 @@ Logiks-Play 2.0
 
 Great day Logiks Users :-)
 
-Play is hosted at <http://play.openlogiks.net>
+Play is hosted at <https://play.openlogiks.net>
 
 Ever faced with a situation when, you have code or a design that you need to test quickly and possibly share with others. Logiks Play is a playground for an interactive coding environment for Logiks to test Logiks,PHP,JS,CSS,Smarty,etc. right inside your browser.
 
