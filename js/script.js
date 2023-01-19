@@ -1,4 +1,5 @@
 var popupDlg=null;
+var maxExecuteTime = 3;
 $(function() {
 	$('#codepaneTab a').click(function (e) {
 		  e.preventDefault()
@@ -12,6 +13,10 @@ $(function() {
 			cmd=$(this).attr('cmd');
 			takeAction(cmd,this);
 		});
+		
+	setInterval(function() {
+        processAJAXQuery(_service("ping"))
+    }, 300000);
 });
 
 function takeAction(cmd,src) {
@@ -47,9 +52,23 @@ function takeAction(cmd,src) {
 			}
 	}
 }
+function showExcecuteLoader() {
+    $(".modal").detach();
+    waitingDialog.show(`Running ... <span id='loaderCounter' class='pull-right' data-refid='${maxExecuteTime}'>${maxExecuteTime}</span>`);
+    
+    setTimeout(function() {
+        waitingDialog.hide();
+    }, maxExecuteTime*1000);
+    
+    var a1 = setInterval(function() {
+        var counterIndex = $("#loaderCounter").data("refid")-1;
+        $("#loaderCounter").data("refid", counterIndex).html(counterIndex);
+        if(counterIndex<=0) clearInterval(a1);
+    }, 1000);
+}
 function executeCode() {
 	//console.log("Executing Workspace Code");
-    waitingDialog.show("Running ...");
+    showExcecuteLoader();
 	arr=getCodeData();
 	if($("#codespace .optsTable").length>0) {
 		$("select,input","#codespace .optsTable").each(function() {

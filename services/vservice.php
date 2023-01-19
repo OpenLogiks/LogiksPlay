@@ -1,8 +1,9 @@
 <?php
 if(!defined('ROOT')) exit('No direct script access allowed');
 //checkServiceSession();
-
-if(isset($_REQUEST['lpgsid'])) {
+if(isset($_REQUEST['cmd2']) && $_REQUEST['cmd2']=="ping") {
+    echo "ok";
+} elseif(isset($_REQUEST['lpgsid'])) {
 	$sid=$_REQUEST['lpgsid'];
 	$codes_dir=getCodeDir($sid);
 	$code_cache_dir=getCodeCacheFile($sid);
